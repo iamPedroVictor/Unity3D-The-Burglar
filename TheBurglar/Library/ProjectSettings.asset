@@ -6,11 +6,11 @@ PlayerSettings:
   serializedVersion: 8
   productGUID: 2a6d7573a2593c848b9f168eeb01eb9c
   AndroidProfiler: 0
-  defaultScreenOrientation: 4
+  defaultScreenOrientation: 3
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
+  companyName: ComandoComando
   productName: TheBurglar
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -94,8 +94,8 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleIdentifier: com.Company.ProductName
-  bundleVersion: 1.0
+  bundleIdentifier: com.Company.TheBurglar
+  bundleVersion: 0.1
   preloadedAssets: []
   metroEnableIndependentInputSource: 0
   xboxOneDisableKinectGpuReservation: 0
@@ -178,7 +178,13 @@ PlayerSettings:
     banner: {fileID: 0}
   androidGamepadSupportLevel: 0
   resolutionDialogBanner: {fileID: 0}
-  m_BuildTargetIcons: []
+  m_BuildTargetIcons:
+  - m_BuildTarget: 
+    m_Icons:
+    - serializedVersion: 2
+      m_Icon: {fileID: 10904, guid: 0000000000000000f000000000000000, type: 0}
+      m_Width: 128
+      m_Height: 128
   m_BuildTargetBatching: []
   m_BuildTargetGraphicsAPIs: []
   webPlayerTemplate: APPLICATION:Default
@@ -415,10 +421,30 @@ PlayerSettings:
   XboxOneAllowedProductIds: []
   XboxOnePersistentLocalStorageSize: 0
   intPropertyNames:
+  - Android::ScriptingBackend
+  - Metro::ScriptingBackend
   - Standalone::ScriptingBackend
+  - WebGL::ScriptingBackend
+  - WebGL::audioCompressionFormat
+  - WebGL::exceptionSupport
+  - WebGL::memorySize
   - WebPlayer::ScriptingBackend
+  - iOS::Architecture
+  - iOS::ScriptingBackend
+  - tvOS::Architecture
+  - tvOS::ScriptingBackend
+  Android::ScriptingBackend: 0
+  Metro::ScriptingBackend: 2
   Standalone::ScriptingBackend: 0
+  WebGL::ScriptingBackend: 1
+  WebGL::audioCompressionFormat: 4
+  WebGL::exceptionSupport: 1
+  WebGL::memorySize: 256
   WebPlayer::ScriptingBackend: 0
+  iOS::Architecture: 2
+  iOS::ScriptingBackend: 1
+  tvOS::Architecture: 1
+  tvOS::ScriptingBackend: 1
   boolPropertyNames:
   - Android::VR::enable
   - Metro::VR::enable
@@ -431,6 +457,9 @@ PlayerSettings:
   - Standalone::VR::enable
   - Tizen::VR::enable
   - WebGL::VR::enable
+  - WebGL::analyzeBuildSize
+  - WebGL::dataCaching
+  - WebGL::useEmbeddedResources
   - WebPlayer::VR::enable
   - WiiU::VR::enable
   - Xbox360::VR::enable
@@ -449,6 +478,9 @@ PlayerSettings:
   Standalone::VR::enable: 0
   Tizen::VR::enable: 0
   WebGL::VR::enable: 0
+  WebGL::analyzeBuildSize: 0
+  WebGL::dataCaching: 0
+  WebGL::useEmbeddedResources: 0
   WebPlayer::VR::enable: 0
   WiiU::VR::enable: 0
   Xbox360::VR::enable: 0
@@ -466,6 +498,9 @@ PlayerSettings:
   - Purchasing_ServiceEnabled::Purchasing_ServiceEnabled
   - UNet_ServiceEnabled::UNet_ServiceEnabled
   - Unity_Ads_ServiceEnabled::Unity_Ads_ServiceEnabled
+  - WebGL::emscriptenArgs
+  - WebGL::template
+  - additionalIl2CppArgs::additionalIl2CppArgs
   Analytics_ServiceEnabled::Analytics_ServiceEnabled: False
   Build_ServiceEnabled::Build_ServiceEnabled: False
   Collab_ServiceEnabled::Collab_ServiceEnabled: False
@@ -475,6 +510,9 @@ PlayerSettings:
   Purchasing_ServiceEnabled::Purchasing_ServiceEnabled: False
   UNet_ServiceEnabled::UNet_ServiceEnabled: False
   Unity_Ads_ServiceEnabled::Unity_Ads_ServiceEnabled: False
+  WebGL::emscriptenArgs: 
+  WebGL::template: APPLICATION:Default
+  additionalIl2CppArgs::additionalIl2CppArgs: 
   vectorPropertyNames:
   - Android::VR::enabledDevices
   - Metro::VR::enabledDevices
