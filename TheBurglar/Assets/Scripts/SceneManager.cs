@@ -21,21 +21,22 @@ public class SceneManager : MonoBehaviour {
 
     void Update()
     {
-        // Debug.Log(Application.loadedLevel.ToString());
-        if (Input.GetKey(KeyCode.Escape)) Application.Quit();
+        if (Application.loadedLevelName.ToString() == splash.name){
+            if (Input.GetKey(KeyCode.Escape)) Application.Quit();
+            //if (Input.GetTouch(0).phase == TouchPhase.Began) Application.LoadLevel(main.name);
+            if (Input.anyKey) Application.LoadLevel(main.name);
+        }
+        else if (Application.loadedLevelName.ToString() == main.name){
+            if (Input.GetKey(KeyCode.Escape)) Application.Quit();
+        }
+        else {
+            if (Input.GetKey(KeyCode.Escape)) Application.LoadLevel(main.name);
 
-        if (Application.loadedLevelName.ToString() == splash.name)
-        {            
-            if (Input.GetKey(KeyCode.Mouse0)) Application.LoadLevel(main.name);
         }
     }
 
-    // Os metodos abaixo sao chamados via broadcast
-
-    void CarregarSplash() {
-        Application.LoadLevel(splash.name);
-    }
-    void CarregarMain() {
-        Application.LoadLevel(main.name);
+    public void UsarEmHUD(string nome_da_cena)
+    {
+        Application.LoadLevel(nome_da_cena);
     }
 }

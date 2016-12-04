@@ -32,6 +32,9 @@ public class SplashImage : MonoBehaviour {
     IEnumerator FadeOut(){
         while (sprite.color.a > 0.01f){
             sprite.color = new Color(1f, 1f, 1f, sprite.color.a - (Time.deltaTime / 2));
+
+            //Application.LoadLevel("testScene");
+
             yield return new WaitForSeconds(Time.deltaTime / 4);
         }
     }

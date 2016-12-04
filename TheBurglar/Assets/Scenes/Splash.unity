@@ -311,7 +311,7 @@ Prefab:
         type: 2}
       propertyPath: main
       value: 
-      objectReference: {fileID: 102900000, guid: 6dfe309eb1b9a7b4bb9861e4adb507e7,
+      objectReference: {fileID: 102900000, guid: f507586c1c5710c4c8f34318e0401f4d,
         type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad954655acea5c04f832c8df5390a5bb, type: 2}
