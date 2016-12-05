@@ -17,7 +17,4 @@ public class PauseManager : MonoBehaviour {
         }
     }
 
-    void VoltarMenu() {
-        BroadcastMessage("CarregarSplash");
-    }
 }
