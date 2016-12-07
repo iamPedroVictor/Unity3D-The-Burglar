@@ -9,6 +9,7 @@ public class MoveOnPath : MonoBehaviour {
     public float speed;
     public float reachDistance = 1.0f;
     public float rotationSpeed = 5.0f;
+    public float timeToPatrol = 2f;
     public string pathName;
 
     Vector3 last_position;
@@ -22,7 +23,7 @@ public class MoveOnPath : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	private void Update () {
         float distance = Vector3.Distance(pathFollow.pathObjs[currentWaypointID].position, transform.position);
         transform.position = Vector3.MoveTowards(transform.position, pathFollow.pathObjs[currentWaypointID].position, Time.deltaTime * speed);
 
@@ -39,4 +40,5 @@ public class MoveOnPath : MonoBehaviour {
         }
 	
 	}
+
 }

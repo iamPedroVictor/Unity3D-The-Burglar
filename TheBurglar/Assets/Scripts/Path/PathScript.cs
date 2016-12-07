@@ -13,20 +13,21 @@ public class PathScript : MonoBehaviour {
 
     public bool isLoop;
 
-    private void OnDrawGizmos()
-    {
+    private void OnDrawGizmos(){
+
         Gizmos.color = rayColor;
         theArray = GetComponentsInChildren<Transform>();
         pathObjs.Clear();
+
         foreach(Transform path_Obj in theArray){
             if(path_Obj != this.transform){
                 pathObjs.Add(path_Obj);
             }
         }
-
+        
         for(int i = 0; i < pathObjs.Count; i++){
             Vector3 position = pathObjs[i].position;
-            if (i > 0){
+                if (i > 0){
                 Vector3 previous = pathObjs[i - 1].position;
                 if (Selection.activeObject.Equals(pathObjs[i].gameObject)){
                     Gizmos.color = selectedColor;
@@ -53,7 +54,6 @@ public class PathScript : MonoBehaviour {
                     Gizmos.DrawLine(previous, position);
                 }
             }
-
         }
 
     }
