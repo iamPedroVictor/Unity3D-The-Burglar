@@ -54,4 +54,8 @@ public class SceneManager : MonoBehaviour {
     void casoSplash() {
         Invoke("carregarMain", 4f);
     }
+
+    public void casoReload() {
+        Application.LoadLevel(fase_aberta);
+    }
 }
