@@ -3,18 +3,38 @@ using System.Collections;
 
 public class PauseManager : MonoBehaviour {
 
-    public GameObject PauseMenu;
+    public GameObject PauseMenu, InGameMenu, GameOver;
+    public GameObject visaoLuz;
 
-    void AtivarPause()
+    public void AtivarPause()
     {
-        if (Time.timeScale == 0) {
-            PauseMenu.SetActive(false);
-            Time.timeScale = 1;
-        }
-        if (Time.timeScale == 1) {
-            PauseMenu.SetActive(true);
-            Time.timeScale = 0;
-        }
+        PauseMenu.SetActive(true);
+        InGameMenu.SetActive(false);
+        Time.timeScale = 0;
     }
 
+    public void DesativarPause() {
+        PauseMenu.SetActive(false);
+        InGameMenu.SetActive(true);
+        Time.timeScale = 1;
+    }
+
+    public void AtivarGameOver() {
+        PauseMenu.SetActive(false);
+        InGameMenu.SetActive(false);
+        GameOver.SetActive(true);
+        Time.timeScale = 0;
+    }
+
+    public void Luz() {
+        if (Time.timeScale != 0.3f)
+        {
+            visaoLuz.SetActive(true);
+            Time.timeScale = 0.3f;
+        }
+        else {
+            visaoLuz.SetActive(false);
+            Time.timeScale = 1f;
+        }
+    }
 }

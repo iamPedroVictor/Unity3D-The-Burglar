@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using UnityEngine.UI;
 
 public class SceneManager : MonoBehaviour {
 
@@ -15,22 +16,19 @@ public class SceneManager : MonoBehaviour {
     {
         fase_aberta = Application.loadedLevelName.ToString();
         Debug.Log(fase_aberta);
-
-        if (fase_aberta == splash.name) casoSplash();
-
+        casoSplash();
     }
 
     void Update()
     {
-        CasoUserEscape();
+        //CasoUserEscape();
     }
 
     void CasoUserEscape() {
         if (fase_aberta == splash.name)
         {
             if (Input.GetKey(KeyCode.Escape)) Application.Quit();
-            //if (Input.GetTouch(0).phase == TouchPhase.Began) Application.LoadLevel(main.name);
-            if (Input.anyKey) Application.LoadLevel(main.name);
+            //if (Input.anyKey) Application.LoadLevel(main.name);
         }
         else if (fase_aberta == main.name)
         {
@@ -48,11 +46,11 @@ public class SceneManager : MonoBehaviour {
     }
 
     void carregarMain() {
-        Application.LoadLevel(main.name);
+        Application.LoadLevel("GameMenu");
     }
 
     void casoSplash() {
-        Invoke("carregarMain", 4f);
+        if (fase_aberta == "Splash") Invoke("carregarMain", 4f);
     }
 
     public void casoReload() {
