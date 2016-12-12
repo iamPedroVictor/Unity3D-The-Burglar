@@ -1111,7 +1111,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4000013927902472, guid: 7bb062662417b204791b70015f3202b5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -38.3
       objectReference: {fileID: 0}
     - target: {fileID: 4000013927902472, guid: 7bb062662417b204791b70015f3202b5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1119,11 +1119,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013927902472, guid: 7bb062662417b204791b70015f3202b5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 32.3
       objectReference: {fileID: 0}
     - target: {fileID: 4000013927902472, guid: 7bb062662417b204791b70015f3202b5, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0.6360782
+      value: 0.6427876
       objectReference: {fileID: 0}
     - target: {fileID: 4000013927902472, guid: 7bb062662417b204791b70015f3202b5, type: 2}
       propertyPath: m_LocalRotation.y
@@ -1135,7 +1135,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013927902472, guid: 7bb062662417b204791b70015f3202b5, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.7716246
+      value: 0.7660445
       objectReference: {fileID: 0}
     - target: {fileID: 4000013927902472, guid: 7bb062662417b204791b70015f3202b5, type: 2}
       propertyPath: m_RootOrder
@@ -1161,7 +1161,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013927902472, guid: 7bb062662417b204791b70015f3202b5, type: 2}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 79
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 114000013367295596, guid: 7bb062662417b204791b70015f3202b5,
         type: 2}
@@ -1718,8 +1718,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e953f325071e1d4ba77d07a4e27c0fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  viewRadius: 0
-  viewAngle: 0
+  viewRadius: 20
+  viewAngle: 50
   targetMask:
     serializedVersion: 2
     m_Bits: 0
@@ -1828,8 +1828,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e953f325071e1d4ba77d07a4e27c0fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  viewRadius: 0
-  viewAngle: 0
+  viewRadius: 20
+  viewAngle: 50
   targetMask:
     serializedVersion: 2
     m_Bits: 0
