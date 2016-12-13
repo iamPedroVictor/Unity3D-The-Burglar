@@ -26,35 +26,28 @@ public class PathScript : MonoBehaviour
             }
         }
         
-        for(int i = 0; i < pathObjs.Count; i++){
+        for(int i = 0; i < pathObjs.Count; i++)
+        {
             Vector3 position = pathObjs[i].position;
-                if (i > 0){
+            if (i > 0)
+            {
                 Vector3 previous = pathObjs[i - 1].position;
-                if (Selection.activeObject.Equals(pathObjs[i].gameObject)){
-                    Gizmos.color = selectedColor;
-                    Gizmos.DrawLine(previous, position);
-                    Gizmos.DrawWireSphere(position, sphereSize);
-                }else{
-                    Gizmos.color = rayColor;
-                    Gizmos.DrawLine(previous, position);
-                    Gizmos.DrawWireSphere(position, sphereSize);
-                }
-            }else{
+                Gizmos.color = rayColor;
+                Gizmos.DrawLine(previous, position);
+                Gizmos.DrawWireSphere(position, sphereSize);
+            }
+            else {
                 Vector3 previous = pathObjs[1].position;
-                if (Selection.activeObject.Equals(pathObjs[i].gameObject)){
-                    Gizmos.color = selectedColor;
-                    Gizmos.DrawLine(previous, position);
-                    Gizmos.DrawWireSphere(position, sphereSize);
-                }else{
-                    Gizmos.color = rayColor;
-                    Gizmos.DrawLine(previous, position);
-                    Gizmos.DrawWireSphere(position, sphereSize);
-                }
-                if (isLoop){
-                    previous = pathObjs[pathObjs.Count-1].position;
+                Gizmos.color = rayColor;
+                Gizmos.DrawLine(previous, position);
+                Gizmos.DrawWireSphere(position, sphereSize);
+                if (isLoop)
+                {
+                    previous = pathObjs[pathObjs.Count - 1].position;
                     Gizmos.DrawLine(previous, position);
                 }
             }
+
         }
 
     }
