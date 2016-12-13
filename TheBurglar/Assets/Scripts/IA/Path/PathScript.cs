@@ -3,7 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 
-public class PathScript : MonoBehaviour {
+public class PathScript : MonoBehaviour
+{
 
     public Color rayColor = Color.white;
     public Color selectedColor = Color.blue;
