@@ -1455,17 +1455,17 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114000011166532392, guid: 189d63c746a8dde4ca8a1f14fd7f765d,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1855638823}
     - target: {fileID: 114000012958554428, guid: 189d63c746a8dde4ca8a1f14fd7f765d,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1855638823}
     - target: {fileID: 114000012809097024, guid: 189d63c746a8dde4ca8a1f14fd7f765d,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1855638823}
+    - target: {fileID: 114000011166532392, guid: 189d63c746a8dde4ca8a1f14fd7f765d,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
