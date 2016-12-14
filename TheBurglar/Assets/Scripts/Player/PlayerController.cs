@@ -26,14 +26,17 @@ public class PlayerController : MonoBehaviour {
 
         float _xMov = Input.GetAxis("Horizontal");
         float _zMov = Input.GetAxis("Vertical");
+        if (_zMov < 0)
+            _zMov =_zMov * 0.5f;
 
-        float _Moviment = (_zMov * movimentSpeed) * Time.deltaTime;
-        float _Rotation = rotateSpeed * _xMov * Time.deltaTime;
+        float _MovimentZ = (_zMov * movimentSpeed) * Time.deltaTime;
+        float _MovimentX = (_xMov * movimentSpeed) * Time.deltaTime;
+        float _Rotation = (rotateSpeed * _xMov) * Time.deltaTime;
         Vector3 _Rotate = new Vector3(0, _Rotation, 0);
-        Vector3 _velocity = new Vector3(0, 0, _Moviment);
+        Vector3 _Velocity = new Vector3(0, 0, _MovimentZ);
 
         //Apply movement
-        motor.Move(_velocity);
+        motor.Move(_Velocity);
         motor.Rotate(_Rotate);
 
         if (Input.GetButtonDown(fire)){

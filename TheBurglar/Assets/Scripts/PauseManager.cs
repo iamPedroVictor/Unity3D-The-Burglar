@@ -6,6 +6,16 @@ public class PauseManager : MonoBehaviour {
     public GameObject PauseMenu, InGameMenu, GameOver;
     public GameObject visaoLuz;
 
+    public static PauseManager instance = null;
+
+    public void Awake()
+    {
+        if (instance != null)
+            Destroy(this);
+        else
+            instance = this;
+    }
+
     public void AtivarPause()
     {
         PauseMenu.SetActive(true);

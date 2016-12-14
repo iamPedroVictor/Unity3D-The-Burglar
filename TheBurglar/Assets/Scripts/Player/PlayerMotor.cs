@@ -8,9 +8,11 @@ public class PlayerMotor : MonoBehaviour {
     private Vector3 rotation = Vector3.zero;
 
     private Transform tf;
+    private Rigidbody rb;
 
     private void Start(){
         tf = GetComponent<Transform>();
+        rb = GetComponent<Rigidbody>();
     }
 
     // Gets a movement vector
@@ -31,9 +33,10 @@ public class PlayerMotor : MonoBehaviour {
 
     void PerformRotation(){
         tf.Rotate(rotation);
+        //rb.MoveRotation(rb.rotation * Quaternion.Euler(rotation));
     }
 
-    private void Update(){
+    private void FixedUpdate(){
         PerformMovement();
         PerformRotation();
     }
