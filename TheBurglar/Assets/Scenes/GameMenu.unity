@@ -354,6 +354,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad954655acea5c04f832c8df5390a5bb, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &478311462 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000011661371396, guid: ad954655acea5c04f832c8df5390a5bb,
+    type: 2}
+  m_PrefabInternal: {fileID: 478311461}
+  m_Script: {fileID: 11500000, guid: 2856da3e72e8b46478a62e132f9fd4fb, type: 3}
 --- !u!1 &574235124
 GameObject:
   m_ObjectHideFlags: 0
@@ -1217,7 +1223,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1930379663}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 478311462}
+        m_MethodName: UsarEmHUD
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Level 01
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1930379663

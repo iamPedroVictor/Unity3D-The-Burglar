@@ -3050,7 +3050,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013551830500, guid: 2c97266dd3e9f124fb7798e3b1c37b11, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 3.56
       objectReference: {fileID: 0}
     - target: {fileID: 4000013551830500, guid: 2c97266dd3e9f124fb7798e3b1c37b11, type: 2}
       propertyPath: m_LocalPosition.z
@@ -3100,12 +3100,12 @@ Prefab:
     - target: {fileID: 54000011436363042, guid: 2c97266dd3e9f124fb7798e3b1c37b11,
         type: 2}
       propertyPath: m_UseGravity
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 54000011436363042, guid: 2c97266dd3e9f124fb7798e3b1c37b11,
         type: 2}
       propertyPath: m_IsKinematic
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1000014156365706, guid: 2c97266dd3e9f124fb7798e3b1c37b11, type: 2}
       propertyPath: m_Layer
@@ -3214,6 +3214,26 @@ Prefab:
     - target: {fileID: 1000010016862614, guid: 2c97266dd3e9f124fb7798e3b1c37b11, type: 2}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 65000010481945470, guid: 2c97266dd3e9f124fb7798e3b1c37b11,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 0.6009361
+      objectReference: {fileID: 0}
+    - target: {fileID: 65000010481945470, guid: 2c97266dd3e9f124fb7798e3b1c37b11,
+        type: 2}
+      propertyPath: m_Center.x
+      value: -0.000000011920929
+      objectReference: {fileID: 0}
+    - target: {fileID: 65000010481945470, guid: 2c97266dd3e9f124fb7798e3b1c37b11,
+        type: 2}
+      propertyPath: m_Center.y
+      value: 0.19953194
+      objectReference: {fileID: 0}
+    - target: {fileID: 65000010481945470, guid: 2c97266dd3e9f124fb7798e3b1c37b11,
+        type: 2}
+      propertyPath: m_Center.z
+      value: 0.12000009
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2c97266dd3e9f124fb7798e3b1c37b11, type: 2}
@@ -3610,6 +3630,7 @@ MonoBehaviour:
   - {fileID: 1971694487}
   - {fileID: 1805901290}
   canExit: 0
+  saida: {fileID: 0}
 --- !u!1001 &1896176637
 Prefab:
   m_ObjectHideFlags: 0
