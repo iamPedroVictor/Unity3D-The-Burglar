@@ -358,6 +358,7 @@ MonoBehaviour:
   - {fileID: 2764646}
   - {fileID: 1625951112}
   - {fileID: 1601656319}
+  canExit: 0
 --- !u!4 &171043132
 Transform:
   m_ObjectHideFlags: 0
@@ -845,6 +846,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1860696701}
   m_RootOrder: 15
+--- !u!1 &456914444 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000011943814858, guid: 2c97266dd3e9f124fb7798e3b1c37b11,
+    type: 2}
+  m_PrefabInternal: {fileID: 509980483}
 --- !u!1 &466141724
 GameObject:
   m_ObjectHideFlags: 0
@@ -1889,11 +1895,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1000011161983678, guid: 189d63c746a8dde4ca8a1f14fd7f765d,
     type: 2}
   m_PrefabInternal: {fileID: 696045807}
---- !u!4 &923340772 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4000012554716590, guid: 2c97266dd3e9f124fb7798e3b1c37b11,
-    type: 2}
-  m_PrefabInternal: {fileID: 509980483}
 --- !u!1001 &926134983
 Prefab:
   m_ObjectHideFlags: 0
@@ -1933,80 +1934,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 114000013367295596, guid: 7bb062662417b204791b70015f3202b5,
+    - target: {fileID: 114000011047829578, guid: 7bb062662417b204791b70015f3202b5,
         type: 2}
-      propertyPath: lastTab
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000013367295596, guid: 7bb062662417b204791b70015f3202b5,
-        type: 2}
-      propertyPath: targetFollow
+      propertyPath: alvo
       value: 
-      objectReference: {fileID: 923340772}
-    - target: {fileID: 4000013927902472, guid: 7bb062662417b204791b70015f3202b5, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013927902472, guid: 7bb062662417b204791b70015f3202b5, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013927902472, guid: 7bb062662417b204791b70015f3202b5, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 80
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000013367295596, guid: 7bb062662417b204791b70015f3202b5,
-        type: 2}
-      propertyPath: followingSpeed
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000013367295596, guid: 7bb062662417b204791b70015f3202b5,
-        type: 2}
-      propertyPath: targetOffset.z
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000013367295596, guid: 7bb062662417b204791b70015f3202b5,
-        type: 2}
-      propertyPath: targetOffset.y
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013927902472, guid: 7bb062662417b204791b70015f3202b5, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.5058583
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013927902472, guid: 7bb062662417b204791b70015f3202b5, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.5058581
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013927902472, guid: 7bb062662417b204791b70015f3202b5, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 0.5058581
-      objectReference: {fileID: 0}
-    - target: {fileID: 20000010330772468, guid: 7bb062662417b204791b70015f3202b5,
-        type: 2}
-      propertyPath: orthographic size
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 20000010330772468, guid: 7bb062662417b204791b70015f3202b5,
-        type: 2}
-      propertyPath: near clip plane
-      value: -70
-      objectReference: {fileID: 0}
-    - target: {fileID: 20000010330772468, guid: 7bb062662417b204791b70015f3202b5,
-        type: 2}
-      propertyPath: far clip plane
-      value: 70
-      objectReference: {fileID: 0}
-    - target: {fileID: 20000010330772468, guid: 7bb062662417b204791b70015f3202b5,
-        type: 2}
-      propertyPath: m_CullingMask.m_Bits
-      value: 4294967279
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000013367295596, guid: 7bb062662417b204791b70015f3202b5,
-        type: 2}
-      propertyPath: limitMap
-      value: 0
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 456914444}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7bb062662417b204791b70015f3202b5, type: 2}
   m_IsPrefabParent: 0

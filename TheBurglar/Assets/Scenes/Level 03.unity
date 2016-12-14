@@ -168,23 +168,19 @@ Prefab:
       propertyPath: far clip plane
       value: 1000
       objectReference: {fileID: 0}
-    - target: {fileID: 114000013367295596, guid: 7bb062662417b204791b70015f3202b5,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: lastTab
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114000013367295596, guid: 7bb062662417b204791b70015f3202b5,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: targetFollow
       value: 
       objectReference: {fileID: 1356812398}
-    - target: {fileID: 114000013367295596, guid: 7bb062662417b204791b70015f3202b5,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: targetOffset.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114000013367295596, guid: 7bb062662417b204791b70015f3202b5,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: followingSpeed
       value: 20
       objectReference: {fileID: 0}
@@ -193,13 +189,11 @@ Prefab:
       propertyPath: orthographic size
       value: 17
       objectReference: {fileID: 0}
-    - target: {fileID: 114000013367295596, guid: 7bb062662417b204791b70015f3202b5,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: targetOffset.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114000013367295596, guid: 7bb062662417b204791b70015f3202b5,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
@@ -212,7 +206,14 @@ Prefab:
       propertyPath: m_CullingMask.m_Bits
       value: 4294966271
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114000011047829578, guid: 7bb062662417b204791b70015f3202b5,
+        type: 2}
+      propertyPath: alvo
+      value: 
+      objectReference: {fileID: 1785802442}
+    m_RemovedComponents:
+    - {fileID: 0}
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 7bb062662417b204791b70015f3202b5, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &20549221
@@ -1941,6 +1942,25 @@ Transform:
   - {fileID: 2018242070}
   m_Father: {fileID: 200142088}
   m_RootOrder: 2
+--- !u!1 &1108709990 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000014156365706, guid: 2c97266dd3e9f124fb7798e3b1c37b11,
+    type: 2}
+  m_PrefabInternal: {fileID: 1785802441}
+--- !u!114 &1108709991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1108709990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28da6aee126bdca4d983f56fc166abfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movimentSpeed: 5
+  rotateSpeed: 30
+  isFire: 0
 --- !u!1001 &1112978350
 Prefab:
   m_ObjectHideFlags: 0
@@ -3198,6 +3218,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2c97266dd3e9f124fb7798e3b1c37b11, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1785802442 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000011943814858, guid: 2c97266dd3e9f124fb7798e3b1c37b11,
+    type: 2}
+  m_PrefabInternal: {fileID: 1785802441}
 --- !u!1 &1802685422
 GameObject:
   m_ObjectHideFlags: 0
@@ -3584,6 +3609,7 @@ MonoBehaviour:
   - {fileID: 535848835}
   - {fileID: 1971694487}
   - {fileID: 1805901290}
+  canExit: 0
 --- !u!1001 &1896176637
 Prefab:
   m_ObjectHideFlags: 0

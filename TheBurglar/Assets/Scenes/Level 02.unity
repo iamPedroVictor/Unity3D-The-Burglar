@@ -694,6 +694,16 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011047829578, guid: 7bb062662417b204791b70015f3202b5,
+        type: 2}
+      propertyPath: alvo
+      value: 
+      objectReference: {fileID: 738908189}
+    - target: {fileID: 20000010330772468, guid: 7bb062662417b204791b70015f3202b5,
+        type: 2}
+      propertyPath: orthographic size
+      value: 17.92
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7bb062662417b204791b70015f3202b5, type: 2}
   m_IsPrefabParent: 0
@@ -1347,6 +1357,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4000013551830500, guid: 2c97266dd3e9f124fb7798e3b1c37b11,
     type: 2}
   m_PrefabInternal: {fileID: 738908187}
+--- !u!1 &738908189 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000011943814858, guid: 2c97266dd3e9f124fb7798e3b1c37b11,
+    type: 2}
+  m_PrefabInternal: {fileID: 738908187}
 --- !u!1 &821993693
 GameObject:
   m_ObjectHideFlags: 0
@@ -1833,6 +1848,7 @@ MonoBehaviour:
   - {fileID: 1422649723}
   - {fileID: 1450626666}
   - {fileID: 1331913130}
+  canExit: 0
 --- !u!4 &1316959234
 Transform:
   m_ObjectHideFlags: 0
@@ -1846,11 +1862,11 @@ Transform:
   m_Children:
   - {fileID: 1510832509}
   - {fileID: 1216923324}
-  - {fileID: 1132689291}
-  - {fileID: 602337308}
   - {fileID: 2010954083}
   - {fileID: 1422649724}
+  - {fileID: 1132689291}
   - {fileID: 1450626667}
+  - {fileID: 602337308}
   - {fileID: 1331913131}
   m_Father: {fileID: 0}
   m_RootOrder: 13
