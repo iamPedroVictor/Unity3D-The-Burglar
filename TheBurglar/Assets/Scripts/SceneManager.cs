@@ -7,7 +7,7 @@ public class SceneManager : MonoBehaviour {
 
     public Object splash;
     public Object main;
-    public Object levelmap;
+    //public Object levelmap;
     public Object game;
     [SerializeField]
     private string fase_aberta;
